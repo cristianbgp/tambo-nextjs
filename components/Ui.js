@@ -15,7 +15,7 @@ function Line({ styles, ...props }) {
   return (
     <hr
       {...props}
-      style={{ border: "solid 1px #efefef", background: "#efefef" }}
+      style={{ border: "solid 1px #efefef", background: "#efefef", ...styles }}
     />
   );
 }
@@ -48,6 +48,7 @@ function Text({ styles, ...props }) {
         fontSize: "16px",
         lineHeight: "24px",
         color: "#333",
+        ...styles,
       }}
     />
   );
